@@ -2,11 +2,8 @@ var socket = io();
 
 socket.on('connect', function () {
 
-  socket.on('newyo', function(data) {
-    console.log(data.username)
-});
-
-
-  socket.on('disconnect',function() {
-  });
+	socket.on('newyo', function(data) {
+		console.log(data.username)
+	});
+	
 });
