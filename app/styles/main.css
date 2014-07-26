@@ -3,7 +3,6 @@
   font-size:14px;
   margin:0;
 }
-
 .container{
   width:350px;
   display:block;
@@ -62,4 +61,8 @@
 }
 .message p{
   padding-top:5px;
+}
+
+#template{
+  display: none;
 }
