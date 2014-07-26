@@ -4,7 +4,10 @@ socket.on('connect', function () {
 	var count = 0;
 
 	var dataUser = function(username){
-		$('#template').clone().removeAttr('id').append('.chat-box').addClass('yo');
+		var yo = $('#template').clone();
+		$('.chat-box').append(yo);
+		yo.addClass('yo').removeAttr('id');
+
 	}
 
 
