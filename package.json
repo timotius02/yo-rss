@@ -1,0 +1,15 @@
+{
+  "name": "yo-polymer",
+  "version": "0.0.1",
+  "description": "A polymer element based on the yo api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Timotius Sitorus",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.7.0",
+    "socket.io": "^1.0.6"
+  }
+}
