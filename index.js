@@ -10,7 +10,8 @@ server.listen(process.env.PORT || 8000, function(){
 app.get('/users', function(req, res){
 
 	if(req.query.username){
-		io.emit('newyo',{username: req.query.username});
+		var data = { username: req.query.username};
+		io.emit('newyo',data);
 	}
 });
 
