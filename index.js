@@ -8,12 +8,10 @@ server.listen(process.env.PORT || 8000, function(){
 });
 
 app.get('/users', function(req, res){
-	console.log(req.query.username);
-	// if(req.username){
-	// 	console.log(req.username);
-	// 	io.emit('newyo',{username: req.username});
 
-	// }
+	if(req.query.username){
+		io.emit('newyo',{username: req.query.username});
+	}
 });
 
 app.use("/", express.static(__dirname + '/app'));
