@@ -1,0 +1,39 @@
+<polymer-element name="yo-rss">
+    <template>   
+        <div class="container">
+            <div class="header">
+                <h2>Recent Yo's</h2>
+            </div>
+
+            <div class="chat-box">
+                <div class="message-box left-img hidden">
+                    <div class="message hidden">
+                        <span>username</span>
+                        <p>Yo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <script>
+        // Polymer({
+        //     counter: 0, // Default value
+        //     counterChanged: function() {
+        //         this.$.counterVal.classList.add('highlight');
+        //     },
+        //     increment: function() {
+        //         this.counter++;
+        //     }
+        // });
+        socket.on('connect', function () {
+
+            socket.on('newyo', function(data) {
+                console.log(data.username)
+            });
+
+        });
+        
+        document.getElementByClass('')
+    </script>
+ </polymer-element>
