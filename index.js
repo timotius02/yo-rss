@@ -8,7 +8,7 @@ server.listen(process.env.PORT || 8000, function(){
 });
 
 app.get('/users', function(req, res){
-	console.log(req);
+	console.log(req.path);
 	// if(req.username){
 	// 	console.log(req.username);
 	// 	io.emit('newyo',{username: req.username});
