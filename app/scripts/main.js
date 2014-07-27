@@ -5,10 +5,10 @@ socket.on('connect', function () {
 
 	var addUser = function(username){
 		if(count >= 5){
-			$('.yo').first().remove();
+			$('.yo').last().remove();
 		}
 		var yo = $('#template').clone();
-		$('.chat-box').append(yo);
+		$('.chat-box').prepend(yo);
 		yo.addClass('yo').removeAttr('id');
 
 		yo.find('span').replaceWith("<span>"+username+"</span>");
